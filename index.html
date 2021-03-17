@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./mrdoc_static/mrdoc_logo_300.png">
+    <title>MrDoc觅道文档官网 - 一个开源的在线文档系统</title>
+    <meta name="description" content="MrDoc觅道文档，是州的先生开源的一个在线文档系统，适合作为个人和小型团队的文档、知识和笔记管理工具">
+    <meta name="keywords" content="觅道文档,MrDoc,文档系统,Python文档系统,Markdow文档系统,私有云笔记,知识库">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="./mrdoc_static/style.css">
+	<link rel="stylesheet" href="./mrdoc_static/viewerjs/viewer.min.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="no-js">
+    <div class="main">
+		<nav style="height:90px;width:100%;background-color: #2f2f2f;">
+			<div class="wrap" style="height:100%;max-width:1140px;display: flex;">
+				<div style="height:90px;width: 200px;background-image: url(./mrdoc_static/mrdoc-logo-white.png);background-position: 0 0;"><a title="觅道文档，开源的在线文档系统，私有云笔记、文档管理、知识库部署方案"></a></div>
+				<div style="">
+				<ul class="index-menu">
+					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="/">首页</a></li>
+					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="http://mrdoc.zmister.com" target="_blank">示例</a></li>
+					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="https://gitee.com/zmister/MrDoc" target="_blank">下载</a></li>
+					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="http://mrdoc.zmister.com/project-7/" target="_blank">安装</a></li>
+				</ul>
+				</div>
+			</div>
+		</nav>
+        <header>
+            <div class="wrap" style="text-align:center;">
+                <div class="header-wrapper">
+                    <h1>MrDoc<span>觅道文档</span></h1>
+					<div style="background-color: rgba(0, 0, 0, 0.3);padding:10px;font-size:16px;">
+						<p>开源在线文档系统，书写便捷、阅读流畅、管理功能丰富</p>
+						<p>适合作为个人和小型团队的私有云文档、云笔记和知识管理工具</p>
+					</div>
+                    <!--<div class="buttons-wrapper">
+						<a href="http://mrdoc.zmister.com/project-7/" target="_blank" class="button button-stripe">安装手册</a>
+                        <a href="http://mrdoc.zmister.com/" target="_blank" class="button button-stripe">示例站点</a>
+						<a href="https://gitee.com/zmister/MrDoc" target="_blank" class="button button-stripe">下载源码</a>
+						<a href="http://shang.qq.com/wpa/qunwpa?idkey=143c23a4ffbd0ba9137d2bce3ee86c83532c05259a0542a69527e36615e64dba" target="_blank" class="button button-stripe">官方QQ群</a>
+                    </div> -->
+                </div>
+                <!-- /.header-wrapper -->
+            </div>
+            <!-- /.wrap -->
+        </header>
+        <div class="spanning">
+            <div class="promo clearfix">
+                <div class="wrap">
+                    <div class="promo-wrapper clearfix">
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/write.svg" height="32" width="24" alt="">
+                            <h5>便捷书写</h5>
+                            <p>觅道文档采用 Markdown 作为书写语法，专注于核心内容而非排版样式，使得文档的书写简便且高效。</p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/read.svg" height="40px" width="36px" alt="">
+                            <h5>沉浸阅读</h5>
+                            <p>双栏式阅读界面，左侧大纲，右方内容，像阅读一本书籍一样阅读文档，带来非凡的阅读体验。</p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/function.svg" height="32" width="34" alt="">
+                            <h5>扩展丰富</h5>
+                            <p>不仅支持导出 Markdown、PDF 等各种格式文件，还能搭配浏览器剪藏扩展化身收藏神器</p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/manage.svg" height="36" width="336" alt="">
+                            <h5>管理强大</h5>
+                            <p>丰富的站点管理和权限控制功能，不仅易于管理文档，也易于管理整个系统。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+            <!-- /.promo clearfix -->
+			
+			<div class="video clearfix" style="background: #fafafa;">
+                <div class="wrap">
+                    <div class="video-title">代码开源</div>
+                    <div class="video-subtitle">
+					觅道文档的代码以<a href="https://gitee.com/zmister/MrDoc/blob/master/LICENSE" target="_blank">GPL-3.0许可</a>协议托管在<a href="https://gitee.com/zmister/MrDoc">Gitee</a>和<a href="https://github.com/zmister2016/MrDoc">GitHub</a>。</div>
+                    <div class="video-block" style="text-align:center;">
+						<img src="./mrdoc_static/yuanma.svg" width="550px" alt="">
+                    </div>
+                    <div class="video-share-wrapper clearfix">
+                        <ul class="social-list clearfix">
+							<a href='https://gitee.com/zmister/MrDoc/stargazers'><img src='https://gitee.com/zmister/MrDoc/badge/star.svg?theme=gvp' alt='star' style="width:170px;"></img></a>
+                            <li><iframe src="https://ghbtns.com/github-btn.html?user=zmister2016&repo=MrDoc&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+			
+            <!-- /.discover clearfix -->
+            <div class="video clearfix">
+                <div class="wrap">
+                    <div class="video-title">私有化部署</div>
+                    <div class="video-subtitle">安装部署在你的计算机或服务器上，数据的存储和流通完全自己掌控</div>
+                    <div class="video-block" style="text-align:center;">
+						<img src="./mrdoc_static/jiami.svg" width="550px" alt="">
+                    </div>
+                    <div class="video-share-wrapper clearfix">
+                        <ul class="social-list clearfix">
+                            <li class="video-share-title">无论你记录的是：</li>
+                            <li><a href="javascript:void(0);" class="social-twitter"><strong>私人笔记</strong></a></li>
+                            <li><a href="javascript:void(0);" class="social-facebook"><strong>内部文档</strong></a></li>
+                            <li><a href="javascript:void(0);" class="social-google"><strong>机密信息</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+			<div class="promo clearfix" style="background: #fafafa;">
+                <div class="wrap" id="mrdoc-preview">
+					<div class="video-title">软件预览</div>
+                    <div class="promo-wrapper clearfix">
+                        <div class="promo-column">
+                            <h5>首页</h5>
+                            <img src="./mrdoc_static/imgs/mrdoc-index.jpg" height="32" width="24" alt="">
+                        </div>
+                        <div class="promo-column">
+                            <h5>文档内页</h5>
+                            <img src="./mrdoc_static/imgs/mrdoc-read.jpg" height="32" width="24" alt="">
+                        </div>
+                        <div class="promo-column">
+                            <h5>文档编辑器</h5>
+                            <img src="./mrdoc_static/imgs/mrdoc-write.jpg" height="32" width="24" alt="">
+                        </div>
+                        <div class="promo-column">
+                            <h5>后台管理</h5>
+                            <img src="./mrdoc_static/imgs/mrdoc-admin.jpg" height="32" width="24" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+			
+			<div class="promo clearfix">
+                <div class="wrap">
+					<div class="video-title">使用场景</div>
+                    <div class="promo-wrapper clearfix">
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/icon1.svg" height="32" width="24" alt="">
+                            <h5>个人知识管理</h5>
+                            <p>按文集进行归类，最高 3 层的文档层级，用于个人知识管理，让个人知识不再碎片化和零散化。</p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/icon6.svg" height="40px" width="36px" alt="">
+                            <h5>团队文档库</h5>
+                            <p>使用觅道文档用作团队内部的文档库，沉淀团队经验，积累团队数字资产。</p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/icon3.svg" height="32" width="34" alt="">
+                            <h5>产品说明手册</h5>
+                            <p>书籍化的结构，适合作为产品的说明手册来呈现，特别是有多个产品需要编写文档手册的时候。</p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="./mrdoc_static/icon4.svg" height="36" width="336" alt="">
+                            <h5>网络教程书籍</h5>
+                            <p>博客的记录太过于流水账和分散，用觅道文档写一个网络书籍，让自己的输出体系化，也为读者提供一份流畅的阅读和学习体验。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+
+            <!-- /.simple clearfix -->
+            <div class="newsletter clearfix">
+                <div class="wrap">
+                    <div class="newsletter-title">遇到问题？</div>
+					<div class="video-subtitle">如果在使用过程中遇到什么问题，可以通过下面的渠道进行反馈和获取帮助。</div>
+					<div class="video-block" style="text-align:center;">
+						<img src="./mrdoc_static/question.svg" width="550px" alt="">
+                    </div>
+                    <div class="video-share-wrapper clearfix">
+                        <ul class="social-list clearfix">
+                            <li><a href="https://github.com/zmister2016/MrDoc/issues" class="social-twitter" target="_blank"><strong>GitHub Issue</strong></a></li>
+                            <li><a href="https://gitee.com/zmister/MrDoc/issues" class="social-facebook" target="_blank"><strong>码云 Issue</strong></a></li>
+                            <li><a href="http://shang.qq.com/wpa/qunwpa?idkey=143c23a4ffbd0ba9137d2bce3ee86c83532c05259a0542a69527e36615e64dba" class="social-google" target="_blank"><strong>QQ群</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+            <!-- /.newsletter clearfix -->
+			<div class="video clearfix">
+                <div class="wrap">
+                    <div class="video-title">支持项目发展</div>
+                    <div class="video-subtitle">觅道文档开源、免费使用，需要你的支持才能持续更新迭代，请通过下面的方式支持项目的发展！</div>
+					<div class="video-block" style="text-align:center;">
+						<img src="./mrdoc_static/dashang.svg" width="550px" alt="">
+                    </div>
+                    <div class="discover-button clearfix">
+						<a href="http://mrdoc.zmister.com/project-7/doc-434/" target="_blank" class="button button-download">
+							<img class="button-icon" src="./mrdoc_static/alipay.svg"/>
+							<span class="button-download-subtitle" style="padding-top:15px;">支付宝</span>
+						</a>
+						<a href="http://mrdoc.zmister.com/project-7/doc-434/" target="_blank" class="button button-download android">
+							<img class="button-icon" src="./mrdoc_static/wxpay.svg"/>
+							<span class="button-download-subtitle" style="padding-top:15px;">微信</span>
+						</a>
+						<a href="http://mrdoc.zmister.com/project-7/doc-434/" target="_blank" class="button button-download android">
+							<img class="button-icon" src="./mrdoc_static/paypal.svg"/>
+							<span class="button-download-subtitle" style="padding-top:15px;">PayPal</span>
+						</a>
+					</div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+        </div>
+        <!-- /.spanning-columns -->
+    </div>
+    <!-- /.main -->
+    <footer style="padding: 20px 0;display:flex"> 
+        <div class="wrap">
+			<img src="https://zmister.com/wp-content/uploads/2019/03/qrcode_for_gh.jpg" style="height:80px;width=80px;" />
+            <p style="padding-top:10px;">&copy; 2019-2021 <strong>州的先生</strong>, All Rights Reserved</p>
+			<p><a href="http://beian.miit.gov.cn/" target="_blank" style="color:white;">湘ICP备17007496号-3</a></p>
+        </div>
+		<div class="wrap">
+            <p style="padding-top:10px;"><strong>合作项目</strong></p>
+			<p><a href="http://www.pearadmin.com/" target="_blank" style="color:white;">
+				<img src="https://gitee.com/pear-admin/Pear-Admin-Layui/raw/master/admin/images/logo.png" style="width:30px;" /> Pear Admin 社区
+			</a></p>
+        </div>
+        <!-- /.wrap -->
+    </footer>
+    <script src="./mrdoc_static/jquery.js"></script>
+    <script src="./mrdoc_static/library.js"></script>
+    <script src="./mrdoc_static/script.js"></script>
+	<script src="./mrdoc_static/viewerjs/viewer.min.js"></script>
+	<script>
+		//查看图片
+		var options = {
+			//inline: true,
+			url: 'data-original',
+			fullscreen:false,//全屏
+			rotatable:false,//旋转
+			scalable:false,//翻转
+			//zoomable:false,//缩放
+			button:false,//关闭按钮
+		};
+		var viewer = new Viewer(document.getElementById('mrdoc-preview'), options);
+    </script>
+    <!-- <script src="/wp-content/mrdoc_static/retina.js"></script> -->
+	<!--百度统计代码-->
+	<div style="display:none">
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?c28c3627ba60c0ca53eef602285aa0ad";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</div>
+	<!-- 百度自动推送 -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https'){
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else{
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+</body>
+</html>
