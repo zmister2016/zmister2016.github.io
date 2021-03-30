@@ -1,250 +1,349 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./mrdoc_static/mrdoc_logo_300.png">
-    <title>MrDoc Home - online document system</title>
-    <meta name="description" content="MrDoc觅道文档，是州的先生开源的一个在线文档系统，适合作为个人和小型团队的文档、知识和笔记管理工具">
-    <meta name="keywords" content="觅道文档,MrDoc,文档系统,Python文档系统,Markdow文档系统,私有云笔记,知识库">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="address=no">
-	<meta name="google-site-verification" content="Z29MGUYuSfhJUsAyQIdfiar3c8YmFfEX5AetBAVYK34" />
-    <link rel="stylesheet" href="./mrdoc_static/style.css">
-	<link rel="stylesheet" href="./mrdoc_static/viewerjs/viewer.min.css">
-    <!--[if lt IE 9]>
-        <script src="js/html5.js"></script>
-        <script src="js/respond.js"></script>
-    <![endif]-->
-</head>
-<body class="no-js">
-    <div class="main">
-		<nav style="height:90px;width:100%;background-color: #2f2f2f;">
-			<div class="wrap" style="height:100%;max-width:1140px;display: flex;">
-				<div style="height:90px;width: 200px;background-image: url(/mrdoc_static/mrdoc-logo-white.png);background-position: 0 0;"><a title="觅道文档，开源的在线文档系统，私有云笔记、文档管理、知识库部署方案"></a></div>
-				<div style="">
-				<ul class="index-menu">
-					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="/">Home</a></li>
-					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="http://mrdoc.zmister.com" target="_blank">Example</a></li>
-					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="https://github.com/zmister2016/MrDoc" target="_blank">Download</a></li>
-					<li><a style="line-height:90px;color:white;margin-left: 50px;" href="http://mrdoc.zmister.com/project-232/" target="_blank">Install</a></li>
-				</ul>
-				</div>
-			</div>
-		</nav>
-        <header>
-            <div class="wrap" style="text-align:center;">
-                <div class="header-wrapper">
-                    <h1><span>MrDoc</span></h1>
-					<div style="background-color: rgba(0, 0, 0, 0.3);padding:10px;font-size:16px;">
-						<p>Online Document System, Best Write, Best Read、Best Manage</p>
-						<p>Private cloud documents, cloud notes and knowledge management tools for individuals and small teams</p>
-					</div>
-                    <!--<div class="buttons-wrapper">
-						<a href="http://mrdoc.zmister.com/project-7/" target="_blank" class="button button-stripe">安装手册</a>
-                        <a href="http://mrdoc.zmister.com/" target="_blank" class="button button-stripe">示例站点</a>
-						<a href="https://gitee.com/zmister/MrDoc" target="_blank" class="button button-stripe">下载源码</a>
-						<a href="http://shang.qq.com/wpa/qunwpa?idkey=143c23a4ffbd0ba9137d2bce3ee86c83532c05259a0542a69527e36615e64dba" target="_blank" class="button button-stripe">官方QQ群</a>
-                    </div> -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MrDoc - Open source online document system</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/mrdoc_logo_300.png" />
+        <!-- Font Awesome icons (free version)-->
+        <!-- <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script> -->
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="viewerjs/viewer.min.css">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/mrdoc-logo-white.png" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#feature">Feature</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#preview">Preview</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#usecase">Use Case</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#install">Install</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#donation">Donation</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <!-- /.header-wrapper -->
             </div>
-            <!-- /.wrap -->
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+				<div class="masthead-heading text-uppercase">MrDoc</div>
+                <div class="masthead-subheading">Online Document System</div>
+                <!-- <div class="masthead-heading text-uppercase">Open source and powerful</div> -->
+                <a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" href="#feature">See More</a>
+				<a class="btn btn-success btn-xl text-uppercase js-scroll-trigger" href="https://github.com/zmister2016/MrDoc">Get MrDoc</a>
+            </div>
         </header>
-        <div class="spanning">
-            <div class="promo clearfix">
-                <div class="wrap">
-                    <div class="promo-wrapper clearfix">
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/write.svg" height="32" width="24" alt="">
-                            <h5>Best Write</h5>
-                            <p>MrDoc uses markdown and a rich text editor.Focus on content rather than style, make document writing simple and efficient.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/read.svg" height="40px" width="36px" alt="">
-                            <h5>Best Read</h5>
-                            <p>Double column reading page, outline on the left and content on the right.Read a document like a book.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/function.svg" height="32" width="34" alt="">
-                            <h5>Best Extended</h5>
-                            <p>It not only supports the export of markdown, PDF, ePub and other formats, but also extends the avatar collection artifact with web browser.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/manage.svg" height="36" width="336" alt="">
-                            <h5>Best Manage</h5>
-                            <p>Rich site management and permission control functions, not only easy to manage documents, but also easy to manage the whole system.</p>
-                        </div>
-                    </div>
+        <!-- Featrue-->
+        <section class="page-section" id="feature">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Feature</h2>
                 </div>
-                <!-- /.wrap -->
-            </div>
-            <!-- /.promo clearfix -->
-			
-			<div class="video clearfix" style="background: #fafafa;">
-                <div class="wrap">
-                    <div class="video-title">Open Source</div>
-                    <div class="video-subtitle">
-					MrDoc use <a href="https://gitee.com/zmister/MrDoc/blob/master/LICENSE" target="_blank">GPL-3.0 License</a>.Source code is hosted in<a href="https://gitee.com/zmister/MrDoc"> Gitee</a> and <a href="https://github.com/zmister2016/MrDoc">GitHub</a>.</div>
-                    <div class="video-block" style="text-align:center;">
-						<img src="./mrdoc_static/yuanma.svg" width="550px" alt="">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/img/feature/write.svg" height="40" width="40" alt="">
+                        </span>
+                        <h4 class="my-3">BEST WRITE</h4>
+                        <p class="text-muted">MrDoc uses markdown and a rich text editor.Focus on content rather than style, make document writing simple and efficient.</p>
                     </div>
-                    <div class="video-share-wrapper clearfix">
-                        <ul class="social-list clearfix">
-							<a href='https://gitee.com/zmister/MrDoc/stargazers'><img src='https://gitee.com/zmister/MrDoc/badge/star.svg?theme=gvp' alt='star' style="width:170px;"></img></a>
-                            <li><iframe src="https://ghbtns.com/github-btn.html?user=zmister2016&repo=MrDoc&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></li>
-                        </ul>
+					
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/img/feature/read.svg" height="40" width="40" alt="">
+                        </span>
+                        <h4 class="my-3">BEST READ</h4>
+                        <p class="text-muted">Double column reading page, outline on the left and content on the right.Read a document like a book.</p>
                     </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-			
-            <!-- /.discover clearfix -->
-            <div class="video clearfix">
-                <div class="wrap">
-                    <div class="video-title">Privatization Deployment</div>
-                    <div class="video-subtitle">Your computer is completely in control of the storage and flow of your data</div>
-                    <div class="video-block" style="text-align:center;">
-						<img src="./mrdoc_static/jiami.svg" width="550px" alt="">
+					
+                    <div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/img/feature/function.svg" height="40" width="40" alt="">
+                        </span>
+                        <h4 class="my-3">BEST EXTENDED</h4>
+                        <p class="text-muted">It not only supports the export of markdown, PDF, ePub and other formats, but also extends the avatar collection artifact with web browser.</p>
                     </div>
-                    <div class="video-share-wrapper clearfix">
-                        <ul class="social-list clearfix">
-                            <li class="video-share-title">No matter what you record:</li>
-                            <li><a href="javascript:void(0);" class="social-twitter"><strong>Personal notes</strong></a></li>
-                            <li><a href="javascript:void(0);" class="social-facebook"><strong>Internal documentation</strong></a></li>
-                            <li><a href="javascript:void(0);" class="social-google"><strong>Confidential Information</strong></a></li>
-                        </ul>
+					
+					<div class="col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <img src="assets/img/feature/manage.svg" height="40" width="40" alt="">
+                        </span>
+                        <h4 class="my-3">BEST MANAGE</h4>
+                        <p class="text-muted">Rich site management and permission control functions, not only easy to manage documents, but also easy to manage the whole system.</p>
                     </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-			<div class="promo clearfix" style="background: #fafafa;">
-                <div class="wrap" id="mrdoc-preview">
-					<div class="video-title">Project Preview</div>
-                    <div class="promo-wrapper clearfix">
-                        <div class="promo-column">
-                            <h5>Home</h5>
-                            <img src="./mrdoc_static/imgs/mrdoc-index.jpg" height="32" width="24" alt="">
-                        </div>
-                        <div class="promo-column">
-                            <h5>Read Page</h5>
-                            <img src="./mrdoc_static/imgs/mrdoc-read.jpg" height="32" width="24" alt="">
-                        </div>
-                        <div class="promo-column">
-                            <h5>Write Page</h5>
-                            <img src="./mrdoc_static/imgs/mrdoc-write.jpg" height="32" width="24" alt="">
-                        </div>
-                        <div class="promo-column">
-                            <h5>Admin Page</h5>
-                            <img src="./mrdoc_static/imgs/mrdoc-admin.jpg" height="32" width="24" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-			
-			<div class="promo clearfix">
-                <div class="wrap">
-					<div class="video-title">Usage</div>
-                    <div class="promo-wrapper clearfix">
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/icon1.svg" height="32" width="24" alt="">
-                            <h5>Knowledge Management</h5>
-                            <p>Classified according to the corpus, the highest three levels of document level are used for personal knowledge management, so that personal knowledge is no longer fragmented and fragmented.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/icon6.svg" height="40px" width="36px" alt="">
-                            <h5>Team Document Warehouse</h5>
-                            <p>MrDoc is used as the document library within the team, which precipitates team experience and accumulates team digital assets.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/icon3.svg" height="32" width="34" alt="">
-                            <h5>Product Manual</h5>
-                            <p>The book like structure is suitable for presentation as a product instruction manual, especially when there are multiple products that need to be documented.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="./mrdoc_static/icon4.svg" height="36" width="336" alt="">
-                            <h5>Online Book</h5>
-                            <p>The records of blog are too daily and scattered. Write an online book with seeking documents to systematize your output and provide readers with a smooth reading and learning experience.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
 
-            <!-- /.simple clearfix -->
-            <div class="newsletter clearfix">
-                <div class="wrap">
-                    <div class="newsletter-title">Problems?</div>
-					<div class="video-subtitle">If you encounter any problems in the use process, you can get feedback and help through the following channels.</div>
-					<div class="video-block" style="text-align:center;">
-						<img src="./mrdoc_static/question.svg" width="550px" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Preview Grid-->
+        <section class="page-section bg-light" id="preview">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Preview MrDoc</h2>
+                    <h3 class="section-subheading text-muted">Preview the operation interface of mrdoc.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/preview/mrdoc-index.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">MrDoc Home Page</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="video-share-wrapper clearfix">
-                        <ul class="social-list clearfix">
-                            <li><a href="https://github.com/zmister2016/MrDoc/issues" class="social-twitter" target="_blank"><strong>GitHub Issue</strong></a></li>
-                            <li><a href="https://gitee.com/zmister/MrDoc/issues" class="social-facebook" target="_blank"><strong>Gitee Issue</strong></a></li>
-                            <li><a href="http://shang.qq.com/wpa/qunwpa?idkey=143c23a4ffbd0ba9137d2bce3ee86c83532c05259a0542a69527e36615e64dba" class="social-google" target="_blank"><strong>QQ Group</strong></a></li>
-                        </ul>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/preview/mrdoc-project.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Project Page</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/preview/mrdoc-doc.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Document Read Page</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/preview/mrdoc-write.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Document Write Page</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/preview/mrdoc-user-center.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">User Manage Center</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/preview/mrdoc-admin.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Admin Manage Center</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- /.wrap -->
             </div>
-            <!-- /.newsletter clearfix -->
-			<div class="video clearfix">
-                <div class="wrap">
-                    <div class="video-title">Donation</div>
-                    <div class="video-subtitle">MrDoc is open source and free to use. It needs your support to continuously update and iterate. Please support the development of the project in the following way!</div>
-					<div class="video-block" style="text-align:center;">
-						<img src="./mrdoc_static/dashang.svg" width="550px" alt="">
-                    </div>
-                    <div class="discover-button clearfix">
-						<a href="http://mrdoc.zmister.com/project-7/doc-434/" target="_blank" class="button button-download">
-							<img class="button-icon" src="./mrdoc_static/alipay.svg"/>
-							<span class="button-download-subtitle" style="padding-top:15px;">AliPay</span>
-						</a>
-						<a href="http://mrdoc.zmister.com/project-7/doc-434/" target="_blank" class="button button-download android">
-							<img class="button-icon" src="./mrdoc_static/wxpay.svg"/>
-							<span class="button-download-subtitle" style="padding-top:15px;">WeChat</span>
-						</a>
-						<a href="http://mrdoc.zmister.com/project-7/doc-434/" target="_blank" class="button button-download android">
-							<img class="button-icon" src="./mrdoc_static/paypal.svg"/>
-							<span class="button-download-subtitle" style="padding-top:15px;">PayPal</span>
-						</a>
+        </section>
+        <!-- Use Case-->
+        <section class="page-section" id="usecase">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Use Case</h2>
+                    <h3 class="section-subheading text-muted">Create all kinds of document applications out of the box.</h3>
+					<div class="row text-center">
+						<div class="col-md-3">
+							<span class="fa-stack fa-4x">
+								<img src="assets/img/usecase/icon1.svg" height="40" width="40" alt="">
+							</span>
+							<h4 class="my-3">Knowledge Management</h4>
+							<p class="text-muted">Classified according to the corpus, the highest three levels of document level are used for personal knowledge management, so that personal knowledge is no longer fragmented.</p>
+						</div>
+						
+						<div class="col-md-3">
+							<span class="fa-stack fa-4x">
+								<img src="assets/img/usecase/icon6.svg" height="40" width="40" alt="">
+							</span>
+							<h4 class="my-3">Team Document Warehouse</h4>
+							<p class="text-muted">MrDoc is used as the document library within the team, which precipitates team experience and accumulates team digital assets.</p>
+						</div>
+						
+						<div class="col-md-3">
+							<span class="fa-stack fa-4x">
+								<img src="assets/img/usecase/icon3.svg" height="40" width="40" alt="">
+							</span>
+							<h4 class="my-3">Product Manual</h4>
+							<p class="text-muted">The book like structure is suitable for presentation as a product instruction manual, especially when there are multiple products that need to be documented.</p>
+						</div>
+						
+						<div class="col-md-3">
+							<span class="fa-stack fa-4x">
+								<img src="assets/img/usecase/icon4.svg" height="40" width="40" alt="">
+							</span>
+							<h4 class="my-3">Online Book</h4>
+							<p class="text-muted">The records of blog are too daily and scattered. Write an online book with seeking documents to systematize your output and provide readers with a smooth reading and learning experience.</p>
+						</div>
+					</div>
+					<div class="row" style="justify-content: center;">
+						<a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" href="http://mrdoc.zmister.com/">>>> See Example</a>
 					</div>
                 </div>
-                <!-- /.wrap -->
+            </div>
+        </section>
+        <!-- Install-->
+        <section class="page-section bg-light" id="install">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Try MrDoc</h2>
+                    <h3 class="section-subheading text-muted">Try MrDoc in 5 seps.</h3>
+                </div>
+                <div class="pre-container">
+					<div class="app-bar"><span></span><span></span><span></span></div>
+					<div class="codehilite">
+					<pre>
+# Use git clone mrdoc source code
+git clone https://github.com/zmister2016/MrDoc/
+
+# Install required package
+pip install -r requirements.txt
+
+# Initialize database
+python manage.py migrate
+
+# Create Super User
+python manage.py createsuperuser
+
+# Run test server
+python manage.py runserver
+					</pre>
+					</div>
+                </div>
+				<div class="row" style="justify-content: center;">
+					<a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" href="http://mrdoc.zmister.com/project-232/">>>> Install</a>
+				</div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5" id="donation">
+            <div class="container" >
+				<div class="text-center">
+                    <h2 class="section-heading text-uppercase">Support MrDoc</h2>
+                    <p class="section-subheading text-muted">If mrdoc helps you, I hope you can contribute to this project, which will support the continuous development of mrdoc. Thank you.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://ko-fi.com/zmister"><img class="img-fluid d-block mx-auto" src="assets/img/donation/kofi.svg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="http://mrdoc.zmister.com/project-7/doc-434/"><img class="img-fluid d-block mx-auto" src="assets/img/donation/wechatpay.svg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="http://mrdoc.zmister.com/project-7/doc-434/"><img class="img-fluid d-block mx-auto" src="assets/img/donation/alipay.svg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="https://paypal.me/zmister/"><img class="img-fluid d-block mx-auto" src="assets/img/donation/paypal.svg" alt="" /></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- /.spanning-columns -->
-    </div>
-    <!-- /.main -->
-    <footer style="padding: 20px 0;display:flex"> 
-        <div class="wrap">
-			<img src="https://zmister.com/wp-content/uploads/2019/03/qrcode_for_gh.jpg" style="height:80px;width=80px;" />
-            <p style="padding-top:10px;">&copy; 2019-2021 <strong>Zmister</strong>, All Rights Reserved</p>
-			<p><a href="http://beian.miit.gov.cn/" target="_blank" style="color:white;">湘ICP备17007496号-3</a></p>
-        </div>
-		<div class="wrap">
-            <p style="padding-top:10px;"><strong>Cooperation</strong></p>
-			<p><a href="http://www.pearadmin.com/" target="_blank" style="color:white;">
-				<img src="https://gitee.com/pear-admin/Pear-Admin-Layui/raw/master/admin/images/logo.png" style="width:30px;" /> Pear Admin 社区
-			</a></p>
-        </div>
-        <!-- /.wrap -->
-    </footer>
-    <script src="./mrdoc_static/jquery.js"></script>
-    <script src="./mrdoc_static/library.js"></script>
-    <script src="./mrdoc_static/script.js"></script>
-	<script src="./mrdoc_static/viewerjs/viewer.min.js"></script>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Me</h2>
+                    <h3 class="section-subheading text-muted">You can contact me through the following ways.</h3>
+                </div>
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="help-block text-danger">Github Issuse:<a href="https://github.com/zmister2016/MrDoc/issues">Click Here</a></p>
+                            </div>
+                            <div class="form-group">
+                                <p class="help-block text-danger">Gitee Issuse:<a href="https://gitee.com/zmister/MrDoc/issues">Click Here</a></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <p class="help-block text-danger">Email:<a href="javascript:void(0);">zmister@qq.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p class="help-block text-danger">QQ Group:<a href="http://shang.qq.com/wpa/qunwpa?idkey=143c23a4ffbd0ba9137d2bce3ee86c83532c05259a0542a69527e36615e64dba" target="_blank">735507293</a></p>
+                            </div>
+							<div class="form-group form-group-textarea mb-md-0">
+                                <p class="help-block text-danger">WeChat:<a href="javascript:void(0);">taoist_ling</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">
+						<p style="padding-top:10px;"><strong>Source Code</strong></p>
+						<a href='https://gitee.com/zmister/MrDoc/stargazers'><img src='https://gitee.com/zmister/MrDoc/badge/star.svg?theme=gvp' alt='star' style="width:125px;vertical-align:top;"></img></a>
+						<iframe src="https://ghbtns.com/github-btn.html?user=zmister2016&repo=MrDoc&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                    </div>
+					<div class="col-lg-4 my-3 my-lg-0">
+						<p style="padding-top:10px;"><strong>Copyright</strong></p>
+						Copyright © MrDoc 2021 By <a href="https://zmister.com">zmister</a>
+					</div>
+
+                    <div class="col-lg-4 text-lg-right">
+						<p style="padding-top:10px;"><strong>Cooperation</strong></p>
+                        <p><a href="http://www.pearadmin.com/" target="_blank">
+							<img src="https://gitee.com/pear-admin/Pear-Admin-Layui/raw/master/admin/images/logo.png" style="width:30px;" /> Pear Admin Community
+						</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+		<script src="viewerjs/viewer.min.js"></script>
 	<script>
 		//查看图片
 		var options = {
@@ -256,17 +355,8 @@
 			//zoomable:false,//缩放
 			button:false,//关闭按钮
 		};
-		var viewer = new Viewer(document.getElementById('mrdoc-preview'), options);
+		var viewer = new Viewer(document.getElementById('preview'), options);
     </script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109321658-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-109321658-1');
-	</script>
-    <!-- <script src="/wp-content/mrdoc_static/retina.js"></script> -->
-</body>
+    </body>
 </html>
